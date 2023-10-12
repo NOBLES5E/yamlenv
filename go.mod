@@ -1,4 +1,4 @@
-module github.com/NOBLES5E/yaml-env-loader
+module github.com/NOBLES5E/yamlenv
 
 go 1.21.3
 

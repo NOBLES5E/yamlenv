@@ -1,12 +1,12 @@
-# YAML-ENV-RUNNER
+# yamlenv
 
-The yaml-env-runner is a simple program that reads environment variables from a YAML file and runs a specified program
+The yamlenv is a simple program that reads environment variables from a YAML file and runs a specified program
 using those environment variables.
 
 ## Usage
 
 ```bash
-$ yaml-env-runner -f=<path-to-yaml-file> -- <command> <command-args>
+$ yamlenv -f <path-to-yaml-file> -- <command> <command-args>
 ```
 
 Where `<path-to-yaml-file>` is the path to the YAML file that contains the environment variables key-value pairs
@@ -24,7 +24,7 @@ DB_PASS: secret
 To run a Python script using the environment variables in the `env.yaml` file, execute:
 
 ```bash
-$ yaml-env-runner -f=env.yaml -- python script.py
+$ yamlenv -f env.yaml -- python script.py
 ```
 
 ## Features
@@ -44,16 +44,16 @@ $ yaml-env-runner -f=env.yaml -- python script.py
 - Clone the repository
 
 ```bash
-$ git clone https://github.com/yourusername/yaml-env-runner.git
+$ git clone https://github.com/yourusername/yamlenv.git
 ```
 
 - Build the program
 
 ```bash
-$ go build -o yaml-env-runner main.go
+$ go build -o yamlenv main.go
 ```
 
-This will generate an executable named `yaml-env-runner`.
+This will generate an executable named `yamlenv`.
 
 ## License
 
